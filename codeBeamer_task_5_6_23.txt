@@ -1,0 +1,108 @@
+1) DevOps lifecycle:
+===================
+
+DEV:
+===
+
+1) Plan
+2) Code
+3) Build
+4) Test
+
+OPS:
+===
+
+1) Deploy
+2) Operate
+3) Monitor
+4) Integrate
+
+2) Docker:
+=========
+
+ Open source platform. Enables developers to build, deploy, run, update & manage containers.
+
+ Why use Docker:
+ ==============
+ Multiple Operating systems running on the same host.
+ Client-server type of application.
+ Docker images are the “source code” for our containers; we use them to build.
+ Dockerfile has two types of registries 1) public 2) private.
+ Image is a template & container is a copy of that template. You can have multiple containers (copies) of the same image.
+
+ Install docker:
+ ==============
+
+ docker -v
+ yum update -y
+ yum install docker -y
+ service docker status
+ service docker start
+ usermod -a -G docker ec2-user
+ docker -v
+ docker images
+
+ stop docker:
+ ===========
+ service docker stop
+
+ uninstall docker:
+ ================
+ yum remove docker -y
+
+3) Most used git commands:
+=========================
+
+git (Global Information Tracker) = distributed version control
+version control = helps developers to track & manage changes to s/w project
+git hub: code hosting platform for version control & collaboration
+
+1) Initialize local Git repository
+   git init
+
+2) Create local copy of remote repository
+   git clone ssh://git@github.com/[username]/[repository-name].git
+
+3) Add file to staging area
+   git add [file-name.txt]
+
+4) Add all new & changed files to staging area
+   git add -A
+
+5) Commit changes
+   git commit -m "[commit message]"
+
+6) Remove file (or folder)
+   git rm -r [file-name.txt]
+
+7) Create new branch
+   git branch [branch name]
+
+8) Delete branch
+   git branch -d [branch name]
+
+9) Merge branch into active branch
+   git merge [branch name]
+
+10) Merge branch into target branch
+    git merge [source branch] [target branch]
+
+11) Push branch to your remote repository
+    git push origin [branch name]
+
+12) Push changes to remote repository
+    git push
+
+13) Pull changes from remote repository
+    git pull origin [branch name]
+
+14) Add remote repository
+    git remote add origin
+    ssh://git@github.com/[username]/[repository-name].git
+
+
+
+
+
+
+
